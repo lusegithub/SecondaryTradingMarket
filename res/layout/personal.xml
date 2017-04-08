@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#404040">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="个人中心"
+            android:layout_centerInParent="true"
+            android:textColor="@drawable/text_while"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+    <Button 
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人资料"
+        android:gravity="left"
+        android:layout_marginTop="20dp"/>
+    
+    <Button 
+        android:id="@+id/data_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改资料"
+        android:gravity="left"/>
+    
+    <Button 
+        android:id="@+id/password_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:gravity="left"/>
+    <Button 
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布消息"
+        android:gravity="left"/>
+
+    <Button
+        android:id="@+id/exitCuraccBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="退出当前账号"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#404040">
+        <TextView 
+           android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="校园二手交易平台"
+            android:textColor="@drawable/text_while"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_centerInParent="true"
+       android:layout_marginBottom="100dp"
+       >
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="账号"
+           android:textSize="20sp"/>
+    <EditText 
+        android:id="@+id/login_userEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:hint="填写账号"/>
+    </LinearLayout>
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       >
+    <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="密码"
+           android:textSize="20sp"/>
+    <EditText 
+        android:id="@+id/login_passwordEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:hint="填写密码"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#0099FF"
+        android:text="@string/login"
+        android:textColor="@drawable/text_while" />
+
+    </LinearLayout>
+    
+    <TextView 
+            android:id="@+id/registerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="#0099FF"
+            android:textSize="22sp"
+            android:layout_alignParentBottom="true"
+        	android:layout_alignParentRight="true"/>
+    
+</RelativeLayout>
